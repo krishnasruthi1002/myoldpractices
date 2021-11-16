@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [RegressionSuite]" parallel="classes">
+  <listeners>
+    <listener class-name="com.pagefactory.framework.customListener.RetryListener"/>
+  </listeners>
+  <test name="CompleteTest1(failed)" parallel="classes">
+    <classes>
+      <class name="com.pagefactory.framework.homepage.TC002_VerifyCreateAccount">
+        <methods>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.pagefactory.framework.homepage.TC002_VerifyCreateAccount -->
+      <class name="com.pagefactory.framework.homepage.TC004_VerifyExternalLink">
+        <methods>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="verifyExternalWebsiteLink"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.pagefactory.framework.homepage.TC004_VerifyExternalLink -->
+      <class name="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData">
+        <methods>
+          <include name="endTest"/>
+          <include name="createAccountDifferentRecordsTest" invocation-numbers="1 2 3 4"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData -->
+    </classes>
+  </test> <!-- CompleteTest1(failed) -->
+  <test name="CompleteTest2(failed)" parallel="classes">
+    <classes>
+      <class name="com.pagefactory.framework.homepage.TC002_VerifyCreateAccount">
+        <methods>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.pagefactory.framework.homepage.TC002_VerifyCreateAccount -->
+      <class name="com.pagefactory.framework.homepage.TC004_VerifyExternalLink">
+        <methods>
+          <include name="endTest"/>
+          <include name="endTest"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="verifyExternalWebsiteLink"/>
+          <include name="beforeMethod"/>
+          <include name="beforeMethod"/>
+          <include name="setup"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.pagefactory.framework.homepage.TC004_VerifyExternalLink -->
+      <class name="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData">
+        <methods>
+          <include name="endTest"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData -->
+    </classes>
+  </test> <!-- CompleteTest2(failed) -->
+</suite> <!-- Failed suite [RegressionSuite] -->

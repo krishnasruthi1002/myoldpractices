@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-RegressionSuite">
+              <span class="suite-name border-failed">RegressionSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-RegressionSuite">
+                    <span>D:\Workspace\eclipse\PageFactoryFramework\testNG.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-RegressionSuite">
+                    <span class="test-stats">2 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-RegressionSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-RegressionSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-RegressionSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-RegressionSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-RegressionSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 2 failed,  6 skipped,  3 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods failed suite-RegressionSuite"> (hide)</a> <!-- hide-methods failed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods failed suite-RegressionSuite"> (show)</a> <!-- show-methods failed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-RegressionSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC004_VerifyExternalLink" hash-for-method="verifyExternalWebsiteLink">verifyExternalWebsiteLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC004_VerifyExternalLink" hash-for-method="verifyExternalWebsiteLink">verifyExternalWebsiteLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-RegressionSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods skipped suite-RegressionSuite"> (hide)</a> <!-- hide-methods skipped suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods skipped suite-RegressionSuite"> (show)</a> <!-- show-methods skipped suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content skipped suite-RegressionSuite">
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData" hash-for-method="createAccountDifferentRecordsTest(Denmark, d@d.com, password, n)">createAccountDifferentRecordsTest(Denmark, d@d.com, password, n)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData" hash-for-method="createAccountDifferentRecordsTest(Bhavik, b@b.com, password, n)">createAccountDifferentRecordsTest(Bhavik, b@b.com, password, n)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData" hash-for-method="createAccountDifferentRecordsTest(Child, c@c.com, password, n)">createAccountDifferentRecordsTest(Child, c@c.com, password, n)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData" hash-for-method="createAccountDifferentRecordsTest(England, e@e.com, password, n)">createAccountDifferentRecordsTest(England, e@e.com, password, n)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC004_VerifyExternalLink" hash-for-method="verifyExternalWebsiteLink">verifyExternalWebsiteLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC004_VerifyExternalLink" hash-for-method="verifyExternalWebsiteLink">verifyExternalWebsiteLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-RegressionSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-RegressionSuite" class="hide-methods passed suite-RegressionSuite"> (hide)</a> <!-- hide-methods passed suite-RegressionSuite -->
+                      <a href="#" panel-name="suite-RegressionSuite" class="show-methods passed suite-RegressionSuite"> (show)</a> <!-- show-methods passed suite-RegressionSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-RegressionSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData" hash-for-method="createAccountDifferentRecordsTest(Alex, a@a.com, password, y)">createAccountDifferentRecordsTest(Alex, a@a.com, password, y)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC002_VerifyCreateAccount" hash-for-method="verifyCreateAccount">verifyCreateAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-RegressionSuite" title="com.pagefactory.framework.homepage.TC002_VerifyCreateAccount" hash-for-method="verifyCreateAccount">verifyCreateAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-RegressionSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-RegressionSuite" class="panel RegressionSuite">
+          <div class="suite-RegressionSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.pagefactory.framework.homepage.TC004_VerifyExternalLink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExternalWebsiteLink">
+                  </a> <!-- verifyExternalWebsiteLink -->
+                  <span class="method-name">verifyExternalWebsiteLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink(TC004_VerifyExternalLink.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExternalWebsiteLink">
+                  </a> <!-- verifyExternalWebsiteLink -->
+                  <span class="method-name">verifyExternalWebsiteLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink(TC004_VerifyExternalLink.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-failed -->
+          <div class="suite-RegressionSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.pagefactory.framework.homepage.TC004_VerifyExternalLink</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExternalWebsiteLink">
+                  </a> <!-- verifyExternalWebsiteLink -->
+                  <span class="method-name">verifyExternalWebsiteLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink(TC004_VerifyExternalLink.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyExternalWebsiteLink">
+                  </a> <!-- verifyExternalWebsiteLink -->
+                  <span class="method-name">verifyExternalWebsiteLink</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink(TC004_VerifyExternalLink.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-skipped -->
+          <div class="suite-RegressionSuite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountDifferentRecordsTest(Denmark, d@d.com, password, n)">
+                  </a> <!-- createAccountDifferentRecordsTest(Denmark, d@d.com, password, n) -->
+                  <span class="method-name">createAccountDifferentRecordsTest</span>
+                  <span class="parameters">(Denmark, d@d.com, password, n)</span>
+                  <div class="stack-trace">org.testng.SkipException: This record is marked this as no Run 
+	at com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDifferentRecordsTest(TC003_VerifyLoginWithDifferentData.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountDifferentRecordsTest(Bhavik, b@b.com, password, n)">
+                  </a> <!-- createAccountDifferentRecordsTest(Bhavik, b@b.com, password, n) -->
+                  <span class="method-name">createAccountDifferentRecordsTest</span>
+                  <span class="parameters">(Bhavik, b@b.com, password, n)</span>
+                  <div class="stack-trace">org.testng.SkipException: This record is marked this as no Run 
+	at com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDifferentRecordsTest(TC003_VerifyLoginWithDifferentData.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountDifferentRecordsTest(Child, c@c.com, password, n)">
+                  </a> <!-- createAccountDifferentRecordsTest(Child, c@c.com, password, n) -->
+                  <span class="method-name">createAccountDifferentRecordsTest</span>
+                  <span class="parameters">(Child, c@c.com, password, n)</span>
+                  <div class="stack-trace">org.testng.SkipException: This record is marked this as no Run 
+	at com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDifferentRecordsTest(TC003_VerifyLoginWithDifferentData.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountDifferentRecordsTest(England, e@e.com, password, n)">
+                  </a> <!-- createAccountDifferentRecordsTest(England, e@e.com, password, n) -->
+                  <span class="method-name">createAccountDifferentRecordsTest</span>
+                  <span class="parameters">(England, e@e.com, password, n)</span>
+                  <div class="stack-trace">org.testng.SkipException: This record is marked this as no Run 
+	at com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDifferentRecordsTest(TC003_VerifyLoginWithDifferentData.java:37)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 10 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-skipped -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pagefactory.framework.homepage.TC002_VerifyCreateAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateAccount">
+                  </a> <!-- verifyCreateAccount -->
+                  <span class="method-name">verifyCreateAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCreateAccount">
+                  </a> <!-- verifyCreateAccount -->
+                  <span class="method-name">verifyCreateAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+          <div class="suite-RegressionSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccountDifferentRecordsTest(Alex, a@a.com, password, y)">
+                  </a> <!-- createAccountDifferentRecordsTest(Alex, a@a.com, password, y) -->
+                  <span class="method-name">createAccountDifferentRecordsTest</span>
+                  <span class="parameters">(Alex, a@a.com, password, y)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-RegressionSuite-class-passed -->
+        </div> <!-- panel RegressionSuite -->
+        <div panel-name="test-xml-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Workspace\eclipse\PageFactoryFramework\testNG.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;3&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;RegressionSuite&quot; parallel=&quot;classes&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.pagefactory.framework.customListener.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;CompleteTest1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pagefactory.framework.homepage.TC002_VerifyCreateAccount&quot;/&gt;
+      &lt;class name=&quot;com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData&quot;/&gt;
+      &lt;class name=&quot;com.pagefactory.framework.homepage.TC004_VerifyExternalLink&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CompleteTest1 --&gt;
+  &lt;test name=&quot;CompleteTest2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.pagefactory.framework.homepage.TC002_VerifyCreateAccount&quot;/&gt;
+      &lt;class name=&quot;com.pagefactory.framework.homepage.TC004_VerifyExternalLink&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CompleteTest2 --&gt;
+&lt;/suite&gt; &lt;!-- RegressionSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">CompleteTest1 (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">CompleteTest2 (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_RegressionSuite');
+function tableData_RegressionSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyExternalWebsiteLink')
+data.setCell(0, 2, 'com.pagefactory.framework.homepage.TC004_VerifyExternalLink')
+data.setCell(0, 3, 62796);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyExternalWebsiteLink')
+data.setCell(1, 2, 'com.pagefactory.framework.homepage.TC004_VerifyExternalLink')
+data.setCell(1, 3, 61410);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyExternalWebsiteLink')
+data.setCell(2, 2, 'com.pagefactory.framework.homepage.TC004_VerifyExternalLink')
+data.setCell(2, 3, 61190);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyExternalWebsiteLink')
+data.setCell(3, 2, 'com.pagefactory.framework.homepage.TC004_VerifyExternalLink')
+data.setCell(3, 3, 61057);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyCreateAccount')
+data.setCell(4, 2, 'com.pagefactory.framework.homepage.TC002_VerifyCreateAccount')
+data.setCell(4, 3, 2740);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyCreateAccount')
+data.setCell(5, 2, 'com.pagefactory.framework.homepage.TC002_VerifyCreateAccount')
+data.setCell(5, 3, 1148);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'createAccountDifferentRecordsTest')
+data.setCell(6, 2, 'com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData')
+data.setCell(6, 3, 1020);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'createAccountDifferentRecordsTest')
+data.setCell(7, 2, 'com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'createAccountDifferentRecordsTest')
+data.setCell(8, 2, 'com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'createAccountDifferentRecordsTest')
+data.setCell(9, 2, 'com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'createAccountDifferentRecordsTest')
+data.setCell(10, 2, 'com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData')
+data.setCell(10, 3, 1);
+window.suiteTableData['RegressionSuite']= { tableData: data, tableDiv: 'times-div-RegressionSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <div id="times-div-RegressionSuite">
+              </div> <!-- times-div-RegressionSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for RegressionSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyCreateAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">------------------- Starting verifyCreateAccount Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:Hasu</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:hasu019@gmail.com</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (e8642139-6e64-442b-b41b-7e5723b2ae89)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:password</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[1]/div/div/div[1]/div/ul/li[1]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[1]/div/div/div[1]/div/ul/li[1]/a</span>
+                <span class="reporter-method-output">------------------- Ending verifyCreateAccount Test -------------------</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">createAccountDifferentRecordsTest(Alex, a@a.com, password, y)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a]</span>
+                <span class="reporter-method-output">------------------- Starting createAccountDifferentRecordsTest Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:Alex</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:a@a.com</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (14da6ee2-560f-42a5-b71d-39e1549b6d5a)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:password</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[1]/div/div/div[1]/div/ul/li[1]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[1]/div/div/div[1]/div/ul/li[1]/a</span>
+                <span class="reporter-method-output"><a href='D:\Workspace\eclipse\PageFactoryFramework\src\main\java\com\pagefactory\framework\screenshot\createAccountDifferentRecordsTestAlex_02_07_2021_11_27_49.png'><img src='D:\Workspace\eclipse\PageFactoryFramework\src\main\java\com\pagefactory\framework\screenshot\createAccountDifferentRecordsTestAlex_02_07_2021_11_27_49.png' height='100' width='100'/> </a</span>
+                <span class="reporter-method-output">------------------- Ending createAccountDifferentRecordsTest Test -------------------</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyExternalWebsiteLink</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">------------------- Starting verifyExternalWebsiteLink Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']]</span>
+                <span class="reporter-method-output">Clicked on mensNavigation menu item</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]]</span>
+                <span class="reporter-method-output">Clicked on Valentino of Mens</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Website Link clicked and object is :[[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //p[contains(text(),'s functionality with our robus')]</span>
+                <span class="reporter-method-output">Exception Occured org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),'s functionality with our robus')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PN0RVR2', ip: '192.168.14.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12548, moz:profile: C:\Users\tarun\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12535c7f-e3e0-44f3-9568-d8b0585a79b8
+*** Element info: {Using=xpath, value=//p[contains(text(),'s functionality with our robus')]}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyExternalWebsiteLink</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">------------------- Starting verifyExternalWebsiteLink Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']]</span>
+                <span class="reporter-method-output">Clicked on mensNavigation menu item</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]]</span>
+                <span class="reporter-method-output">Clicked on Valentino of Mens</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Website Link clicked and object is :[[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //p[contains(text(),'s functionality with our robus')]</span>
+                <span class="reporter-method-output">Exception Occured org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),'s functionality with our robus')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PN0RVR2', ip: '192.168.14.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12548, moz:profile: C:\Users\tarun\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12535c7f-e3e0-44f3-9568-d8b0585a79b8
+*** Element info: {Using=xpath, value=//p[contains(text(),'s functionality with our robus')]}</span>
+                <span class="reporter-method-output">Retrying test verifyExternalWebsiteLink with status FAILURE for the 1 time(s).</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyExternalWebsiteLink</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">------------------- Starting verifyExternalWebsiteLink Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']]</span>
+                <span class="reporter-method-output">Clicked on mensNavigation menu item</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]]</span>
+                <span class="reporter-method-output">Clicked on Valentino of Mens</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Website Link clicked and object is :[[FirefoxDriver: firefox on WINDOWS (12535c7f-e3e0-44f3-9568-d8b0585a79b8)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //p[contains(text(),'s functionality with our robus')]</span>
+                <span class="reporter-method-output">Exception Occured org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),'s functionality with our robus')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PN0RVR2', ip: '192.168.14.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 12548, moz:profile: C:\Users\tarun\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 12535c7f-e3e0-44f3-9568-d8b0585a79b8
+*** Element info: {Using=xpath, value=//p[contains(text(),'s functionality with our robus')]}</span>
+                <span class="reporter-method-output">Retrying test verifyExternalWebsiteLink with status FAILURE for the 2 time(s).</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyCreateAccount</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">------------------- Starting verifyCreateAccount Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='header']/div[2]/div/div/div[2]/div/ul/li[5]/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[1]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:Hasu</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[2]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:hasu019@gmail.com</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]</span>
+                <span class="reporter-method-output">Value of the WebElement [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]] before any changes</span>
+                <span class="reporter-method-output">Value changed to [[FirefoxDriver: firefox on WINDOWS (379887cf-b71d-4e9b-818f-1cffb2e748e0)] -> xpath: //*[@id='form']/div/div/div[3]/div/form/input[3]]</span>
+                <span class="reporter-method-output">Clicked on Sign In and object is:password</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='header']/div[1]/div/div/div[1]/div/ul/li[1]/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='header']/div[1]/div/div/div[1]/div/ul/li[1]/a</span>
+                <span class="reporter-method-output">------------------- Ending verifyCreateAccount Test -------------------</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyExternalWebsiteLink</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">------------------- Starting verifyExternalWebsiteLink Test -------------------</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (8d08b637-66a3-4950-b1fd-7a02a05649eb)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@class='panel-heading']/descendant::a[@href='#mens']]</span>
+                <span class="reporter-method-output">Clicked on mensNavigation menu item</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (8d08b637-66a3-4950-b1fd-7a02a05649eb)] -> xpath: //*[@id='accordian']/descendant::div[@class='panel panel-default']/descendant::div[@id='mens']/descendant::div[@class='panel-body']/descendant::ul/child::li/child::a[contains(text(),'Valentino')]]</span>
+                <span class="reporter-method-output">Clicked on Valentino of Mens</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Clicked On: [[FirefoxDriver: firefox on WINDOWS (8d08b637-66a3-4950-b1fd-7a02a05649eb)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Found element By:By.xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a</span>
+                <span class="reporter-method-output">Website Link clicked and object is :[[FirefoxDriver: firefox on WINDOWS (8d08b637-66a3-4950-b1fd-7a02a05649eb)] -> xpath: //*[@id='footer']/div[3]/div/div/p[2]/span/a]</span>
+                <span class="reporter-method-output">Trying to find element By:By.xpath: //p[contains(text(),'s functionality with our robus')]</span>
+                <span class="reporter-method-output">Exception Occured org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[contains(text(),'s functionality with our robus')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-PN0RVR2', ip: '192.168.14.241', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 89.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210622155641, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 14312, moz:profile: C:\Users\tarun\AppData\Loca..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 8d08b637-66a3-4950-b1fd-7a02a05649eb
+*** Element info: {Using=xpath, value=//p[contains(text(),'s functionality with our robus')]}</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-RegressionSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC002_VerifyCreateAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC004_VerifyExternalLink</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink())</span>
+                <span class="method-start">31893 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC002_VerifyCreateAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC002_VerifyCreateAccount.verifyCreateAccount())</span>
+                <span class="method-start">31893 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateAccount</span>
+                <span class="method-start">32255 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC004_VerifyExternalLink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyExternalWebsiteLink</span>
+                <span class="method-start">32255 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC002_VerifyCreateAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCreateAccount status=SUCCESS method=TC002_VerifyCreateAccount.verifyCreateAcc...)</span>
+                <span class="method-start">34997 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">34998 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDiffe...)</span>
+                <span class="method-start">44795 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccountDifferentRecordsTest(Alex, a@a.com, password, y)</span>
+                <span class="method-start">44804 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createAccountDifferentRecordsTest status=SUCCESS method=TC003_VerifyLoginWithDiffer...)</span>
+                <span class="method-start">45825 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDiffe...)</span>
+                <span class="method-start">45826 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccountDifferentRecordsTest(Bhavik, b@b.com, password, n)</span>
+                <span class="method-start">45826 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createAccountDifferentRecordsTest status=SKIP method=TC003_VerifyLoginWithDifferent...)</span>
+                <span class="method-start">45830 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDiffe...)</span>
+                <span class="method-start">45831 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccountDifferentRecordsTest(Child, c@c.com, password, n)</span>
+                <span class="method-start">45831 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createAccountDifferentRecordsTest status=SKIP method=TC003_VerifyLoginWithDifferent...)</span>
+                <span class="method-start">45834 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDiffe...)</span>
+                <span class="method-start">45835 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccountDifferentRecordsTest(Denmark, d@d.com, password, n)</span>
+                <span class="method-start">45835 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createAccountDifferentRecordsTest status=SKIP method=TC003_VerifyLoginWithDifferent...)</span>
+                <span class="method-start">45838 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC003_VerifyLoginWithDifferentData.createAccountDiffe...)</span>
+                <span class="method-start">45839 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createAccountDifferentRecordsTest(England, e@e.com, password, n)</span>
+                <span class="method-start">45839 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=createAccountDifferentRecordsTest status=SKIP method=TC003_VerifyLoginWithDifferent...)</span>
+                <span class="method-start">45842 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">45842 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC004_VerifyExternalLink</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyExternalWebsiteLink status=SKIP method=TC004_VerifyExternalLink.verifyExterna...)</span>
+                <span class="method-start">95081 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink())</span>
+                <span class="method-start">95084 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyExternalWebsiteLink</span>
+                <span class="method-start">95084 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyExternalWebsiteLink status=SKIP method=TC004_VerifyExternalLink.verifyExterna...)</span>
+                <span class="method-start">156277 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink())</span>
+                <span class="method-start">156277 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyExternalWebsiteLink</span>
+                <span class="method-start">156277 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyExternalWebsiteLink status=FAILURE method=TC004_VerifyExternalLink.verifyExte...)</span>
+                <span class="method-start">217335 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">217545 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">219421 ms</span>
+              </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC002_VerifyCreateAccount</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">219421 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC002_VerifyCreateAccount.verifyCreateAccount())</span>
+                <span class="method-start">230467 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCreateAccount</span>
+                <span class="method-start">230468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyCreateAccount status=SUCCESS method=TC002_VerifyCreateAccount.verifyCreateAcc...)</span>
+                <span class="method-start">231617 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">231617 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.pagefactory.framework.homepage.TC004_VerifyExternalLink</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(public void com.pagefactory.framework.homepage.TC004_VerifyExternalLink.verifyExternalWebsiteLink())</span>
+                <span class="method-start">232974 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyExternalWebsiteLink</span>
+                <span class="method-start">232974 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=verifyExternalWebsiteLink status=FAILURE method=TC004_VerifyExternalLink.verifyExte...)</span>
+                <span class="method-start">294386 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">endTest</span>
+                <span class="method-start">294552 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
